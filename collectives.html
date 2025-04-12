@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colibry Sporta - Коллективам</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <a href="/" class="logo">
+        <img src="images/logo.png" alt="Colibry Sporta" class="logo-image">
+      </a>
+      
+      <nav class="nav-links">
+        <a href="/">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="collectives.html">Коллективам</a>
+      </nav>
+      
+      <div class="contact-info">
+        <div class="phone">+7 (800) 123-45-67</div>
+        <div class="email">info@colibry-sporta.ru</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="teams-header bg-muted">
+      <div class="container">
+        <h1 class="teams-title">Коллективам</h1>
+        <p class="teams-subtitle">
+          Специальные условия для танцевальных коллективов, спортивных школ и творческих студий
+        </p>
+      </div>
+    </section>
+    
+    <section class="teams-content">
+      <div class="container">
+        <!-- Почему выбирают нас -->
+        <div class="benefits-section">
+          <h2 class="section-title">Почему выбирают нас</h2>
+          <div class="benefits-grid">
+            <div class="benefit-card bg-soft-purple">
+              <div class="benefit-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>Для любых коллективов</h3>
+              <p>
+                Мы создаем одежду для танцевальных студий, спортивных школ и творческих коллективов любого масштаба
+              </p>
+            </div>
+            
+            <div class="benefit-card bg-soft-yellow">
+              <div class="benefit-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Групповые заказы</h3>
+              <p>
+                Специальные цены при заказе от 10 комплектов и индивидуальный подход к каждому коллективу
+              </p>
+            </div>
+            
+            <div class="benefit-card bg-soft-blue">
+              <div class="benefit-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <h3>Уникальный дизайн</h3>
+              <p>
+                Разработка эксклюзивных моделей с учетом специфики вашего коллектива и выступлений
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Форма обратной связи -->
+          <div class="contact-form-container">
+            <h2>Оставьте заявку на сотрудничество</h2>
+            
+            <div id="form-message" class="form-message"></div>
+            
+            <form id="collective-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Название коллектива / ФИО*</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Контактный телефон*</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+
+              <div class="form-group">
+                <label for="mail">Электронная почта*</label>
+                <input type="email" id="mail" name="mail" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Расскажите о вашем коллективе и пожеланиях*</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" id="submit-btn" class="btn-primary">
+                Отправить заявку
+              </button>
+            </form>
+          </div>
+          
+          <!-- Контактная информация -->
+         <div class="contact-info-container">
+            <h2>Свяжитесь с нами</h2>
+            <p>
+            Мы предоставляем специальные индивидуальные условия школам, клубам,
+            спортивным секциям и танцевальным классам на коллективные заказы.
+            <br><br>
+            Как оформить заказ на школу, группу или коллектив:<br>
+            1) Оставьте заявку на этой странице.<br>
+            2) Ожидайте ответного письма с индивидуальным расчётом стоимости в зависимости от объёма заказа.
+            </p>
+            
+            <div class="contact-image-container">
+            <img src="images/colibry.png" alt="Colibry Sporta" class="contact-image">
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <a href="/" class="footer-logo">Collbry<span>Sporta</span></a>
+          <p>Мы создаем элегантную и функциональную одежду для гимнастики и танцев, вдохновляя спортсменов на новые достижения.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="collectives.html">Коллективам</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Контакты</h3>
+          <ul>
+            <li>Ростов-на-Дону, ул. Блаблабла, 123</li>
+            <li>+7 (800) 123-45-67</li>
+            <li>info@colibry-sporta.ru</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        &copy; 2025 ColibrySporta. Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script3.js"></script>
+</body>
+</html>
