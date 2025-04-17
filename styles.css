@@ -24,7 +24,7 @@
     padding: 0 15px;
   }
   
-  /* Header Styles */
+  /* шапка*/
   header {
     background-color: var(--brand-black);
     padding: 15px 0;
@@ -41,8 +41,8 @@
   }
   
   .logo-image {
-    height: 40px; /* Настройте высоту по вашему усмотрению */
-    width: auto; /* Сохраняет пропорции изображения */
+    height: 40px;
+    width: auto; 
     transition: opacity 0.3s ease;
   }
   
@@ -82,7 +82,7 @@
     color: var(--brand-yellow);
   }
 
-  /* Banner Styles */
+  /* баннер */
   .banner-section {
     position: relative;
     height: 60vh;
@@ -208,7 +208,7 @@
     border-radius: 6px;
   }
 
-  /* Main Content Styles */
+  
   .section-title {
     font-size: 2rem;
     font-weight: 700;
@@ -246,7 +246,7 @@
     transform: translateY(-2px);
   }
 
-  /* About Section */
+  /* о нас */
   .about-section {
     padding: 60px 0;
     background-color: white;
@@ -292,7 +292,7 @@
     font-size: 24px;
   }
 
-  /* Products Section */
+  /* товары */
   .products-section {
     padding: 60px 0;
     background-color: var(--muted);
@@ -357,7 +357,7 @@
   }
 
 
-/* Catalog Header */
+/* страница каталога, шапка */
 .catalog-header {
     padding: 60px 0;
     text-align: center;
@@ -376,7 +376,7 @@
     font-size: 1.1rem;
   }
   
-  /* Products Grid */
+  /* сетка товаров */
   .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -417,7 +417,7 @@
     font-size: 1.2rem;
   }
   
-  /* Pagination */
+  /* пагинация */
   .pagination {
     display: flex;
     justify-content: center;
@@ -458,7 +458,7 @@
   }
 
 
-  /* Teams Page Styles */
+  /* коллективам */
 .teams-header {
     padding: 60px 0;
     text-align: center;
@@ -477,7 +477,6 @@
     font-size: 1.1rem;
   }
   
-  /* Benefits Section */
   .benefits-section {
     margin-bottom: 60px;
   }
@@ -522,7 +521,7 @@
     color: var(--brand-gray);
   }
   
-  /* Contact Grid */
+  
   .contact-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -549,7 +548,6 @@
     margin-bottom: 20px;
   }
   
-  /* Form Styles */
   .form-group {
     margin-bottom: 20px;
   }
@@ -620,8 +618,96 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
+/* Стили для чекбокса и соглашения */
+/* Стили для сообщений формы */
+.form-message {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  display: none;
+}
 
-  /* Background Colors */
+.form-message.success {
+  display: block;
+  background-color: #f0fff4;
+  color: #2d7d46;
+}
+
+.form-message.error {
+  display: block;
+  background-color: #fff0f0;
+  color: #d32f2f;
+}
+
+/* Стили для чекбокса соглашения */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  text-align: left;
+  justify-content: flex-end;
+  margin-right: 175px;
+}
+
+
+.agreement-label {
+  font-size: 14px;
+  color: var(--brand-gray);
+  text-align: left;
+  line-height: 1.4;
+  display: inline;
+}
+
+.agreement-link {
+  color: var(--brand-yellow);
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline;
+  white-space: nowrap;
+}
+
+/* Стили модального окна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--brand-gray);
+}
+
+.close-modal:hover {
+  color: var(--brand-black);
+}
+
+.modal-text {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+    /* Background Colors */
   .bg-soft-purple {
     background-color: #f5f0ff;
   }
@@ -634,7 +720,8 @@
     background-color: #f0f7ff;
   }
 
-  /* Footer */
+
+  /* подвал */
   footer {
     background-color: var(--brand-black);
     color: white;
