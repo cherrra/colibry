@@ -1,11 +1,32 @@
 // Ждем полной загрузки DOM перед выполнением скриптов
 document.addEventListener('DOMContentLoaded', function() {
+  // Инициализация бургер-меню
+  initBurgerMenu();
+  
   // Рендерим баннер сразу после загрузки страницы
   renderBanner();
   
   // Рендерим рекомендуемые товары
   renderFeaturedProducts();
 });
+
+// Функция для инициализации бургер-меню
+function initBurgerMenu() {
+  const burger = document.querySelector('.burger-menu');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  
+  burger.addEventListener('click', function() {
+    mobileMenu.classList.toggle('active');
+  });
+  
+  // Закрытие меню при клике на ссылку
+  const mobileLinks = mobileMenu.querySelectorAll('a');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+    });
+  });
+}
 
 // Функция для создания и управления баннером-слайдером
 function renderBanner() {

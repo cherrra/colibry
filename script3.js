@@ -113,4 +113,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Проверяем что осталось минимум 10 цифр
     return digits.length >= 10;
   }
+
+  function initBurgerMenu() {
+    const burger = document.querySelector('.burger-menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+    burger.addEventListener('click', function() {
+      mobileMenu.classList.toggle('active');
+    });
+    
+    // Закрытие меню при клике на ссылку
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+      });
+    });
+  }
+
+  initBurgerMenu();
 });
