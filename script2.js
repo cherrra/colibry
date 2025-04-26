@@ -1,5 +1,21 @@
 // Ожидаем полной загрузки DOM перед выполнением скрипта
 document.addEventListener('DOMContentLoaded', function() {
+
+  const phoneElement = document.querySelector('.contact-info .phone');
+  phoneElement.addEventListener('click', function() {
+    const phoneNumber = this.textContent.trim().replace(/\D/g, '');
+    window.location.href = `tel:${phoneNumber}`;
+  });
+  phoneElement.style.cursor = 'pointer'; 
+
+  // Обработка клика на email
+  const emailElement = document.querySelector('.contact-info .email');
+  emailElement.addEventListener('click', function() {
+    const email = this.textContent.trim();
+    window.location.href = `mailto:${email}`;
+  });
+  emailElement.style.cursor = 'pointer'; 
+  
   // Массив объектов с данными о товарах
   const products = [
     {
