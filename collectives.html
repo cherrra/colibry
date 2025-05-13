@@ -193,5 +193,21 @@
   </footer>
 
   <script src="js/script3.js"></script>
+  <script>      // Добавляем обработчик для бургер-меню
+      const burgerMenu = document.querySelector('.burger-menu');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      
+      burgerMenu.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+      });
+      
+      // Закрываем меню при клике на ссылку
+      const mobileLinks = document.querySelectorAll('.mobile-menu a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('active');
+        });
+      });
+    </script>
 </body>
 </html>
